@@ -18,10 +18,9 @@ jobs:
           android-version: 15
           aosp-clang: true
           aosp-clang-version: r510928
-          aosp-gcc: true
+          aosp-gcc: false
           nethunter: true
           nethunter-patch: true
           anykernel3: true
-          ksu: true
-          ksu-version: v1.0.5
+          ksu: false
           ccache: true
