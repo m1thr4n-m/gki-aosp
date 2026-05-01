@@ -1,0 +1,27 @@
+name: Build Capybara NetHunter GKI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-kernel:
+    name: Build Kernel
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Build
+        uses: dabao1955/kernel_build_action@main
+        with:
+          kernel-url: https://github.com/71chjzkc/gki-aosp
+          kernel-branch: main
+          config: capybara_defconfig
+          arch: arm64
+          android-version: 15
+          aosp-clang: true
+          aosp-clang-version: r510928
+          aosp-gcc: true
+          nethunter: true
+          nethunter-patch: true
+          anykernel3: true
+          ksu: true
+          ksu-version: v1.0.5
+          ccache: true
