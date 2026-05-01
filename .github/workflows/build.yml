@@ -16,9 +16,9 @@ jobs:
           config: capybara_defconfig
           arch: arm64
           android-version: 15
-          aosp-clang: true
-          aosp-clang-version: r510928
+          aosp-clang: false
           aosp-gcc: false
+          custom-clang: https://github.com/ZyCromerZ/Clang/releases/download/23.0.0git-20260130-release/Clang-23.0.0git-20260130.tar.gz
           nethunter: true
           nethunter-patch: true
           anykernel3: true
