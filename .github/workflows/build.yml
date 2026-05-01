@@ -20,7 +20,7 @@ jobs:
           aosp-gcc: true
           other-clang-url: https://github.com/ZyCromerZ/Clang/releases/download/23.0.0git-20260130-release/Clang-23.0.0git-20260130.tar.gz
           nethunter: true
-          nethunter-patch: true
+          nethunter-patch: false
           anykernel3: true
           ksu: false
           ccache: true
