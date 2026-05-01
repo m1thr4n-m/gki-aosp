@@ -15,12 +15,13 @@ jobs:
           kernel-branch: main
           config: capybara_defconfig
           arch: arm64
-          android-version: 15
+          android-version: 14
           aosp-clang: false
-          aosp-gcc: false
+          aosp-gcc: true
           other-clang-url: https://github.com/ZyCromerZ/Clang/releases/download/23.0.0git-20260130-release/Clang-23.0.0git-20260130.tar.gz
           nethunter: true
           nethunter-patch: true
           anykernel3: true
           ksu: false
           ccache: true
+          extra-make-args: '["LLVM=1", "LLVM_IAS=1"]'
