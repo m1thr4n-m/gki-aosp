@@ -15,7 +15,7 @@ jobs:
           kernel-branch: main
           config: capybara_defconfig
           arch: arm64
-          android-version: 14
+          android-version: 12
           aosp-clang: false
           aosp-gcc: true
           other-clang-url: https://github.com/ZyCromerZ/Clang/releases/download/23.0.0git-20260130-release/Clang-23.0.0git-20260130.tar.gz
